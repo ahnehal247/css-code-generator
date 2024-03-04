@@ -1,0 +1,229 @@
+.content-box {
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+
+.childfirst {
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.ch1 label {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-right: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type=checkbox]:checked {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    border-color: transparent;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(37 99 235);
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+input[type=checkbox] {
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    accent-color: #4100cd;
+    cursor: pointer;
+}
+
+.mainchild {
+    margin-bottom: 16px;
+}
+
+.ch1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 10px 0px 5px 0px;
+}
+
+.ch2 {
+    position: relative;
+}
+input[type="text"]{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: inline-block;
+    padding: .5rem .75rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+}
+input[type="text"]:focus{
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(87, 66, 139, 0.588);
+}
+
+/* range */
+input[type=range] {
+    width: 100%;
+    height: 4px;
+    margin: 6px 0;
+    background-color: #85cb74;
+    -webkit-appearance: none;
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Input Thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #2c3e50;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #2c3e50;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+}
+
+input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #2c3e50;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #2c3e50;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #2c3e50;
+}
+
+input[type="range"]::-ms-thumb:hover {
+    background: #2c3e50;
+}
+
+/* Input Track */
+input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+input[type=range]::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+.seconddiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seconddiv img{
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    border: none;
+}
+#codebox {
+    visibility: hidden;
+    position: fixed;
+    cursor: pointer;
+    height: 100vh;
+    width: 99vw;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(121, 120, 120, 0.7);
+}
+#codebox>div {
+    position: relative;
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#codebox>div>span {
+    padding: 5px;
+    margin: 5px;
+    height: 50px;
+    font-weight: 700;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    user-select: none;
+}
+#finalcode {
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: inset -100px 10px 15px 12px rgba(0, 0, 0, 0.1);
+}
+
+.clocodbx {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    font-size: x-large;
+    border-radius: 50px;
+    right: -5px;
+    top: -5px;
+    user-select: none;
+}
+.cssproperty{
+    color: red;
+}
+@media only screen and (max-width: 870px) {
+    .content-box {
+        grid-template-columns: auto;
+    }
+}
+@media only screen and (max-width: 290px) {
+    .childfirst {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
