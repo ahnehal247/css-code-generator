@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Filter Generator</title>
+    <meta name="robots" content="index,follow">
+    <meta name="language" content="en">
+    <link rel="canonical" href="https://cssgenerator.online/css-image-filter-generator.html">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="./favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <style>.mvSideBar{ bottom: 0; transform: translatex(-800px); transition: transform 500ms ease-in-out} </style>
+    <link rel="stylesheet" href="./css/image-filter-main.css">
+</head>
+
+<body>
+    <div id="codebox" onclick="this.style.visibility = 'hidden';">
+        <div onclick="event.stopPropagation(); return false;">
+            <span class="clocodbx" style="background-color: red;"
+                onclick="document.getElementById('codebox').style.visibility = 'hidden';">X</span>
+            <h2 style="text-align: center;">Generated Styles</h2>
+            <div id="finalcode"></div>
+            <span
+                onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());document.getElementById('codebox').style.visibility = 'hidden';mySnackbar('darkgreen', 'Successfully Copied');">Copy</span>
+        </div>
+    </div>
+    <div id="snackbar">Sucessfully Copied...</div>
+    <div class="mvSideBar mobile_sidebar">
+        <div class="mclose">
+            <span onclick="toggleBtnClickm(false)">✘</span>
+        </div>
+        <div class="mvsidescroll">
+            <ul>
+                <li><a href="css-box-shadow-generator.html">Box Shadow</a></li>
+                <li><a href="css-image-filter-generator.html">Image Filter</a></li>
+                <li><a href="css-text-shadow-generator.html">Text Shadow</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainheader overflowda" id="mainheader">
+        <div class="header">
+            <button class="menubtn" onclick="toggleBtnClickm(true)" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <a class="logowebsite" href="https://cssgenerator.online/">
+                <img style="height: 35px;width: 35px;" src="./image/logo/logo.svg" alt="Web logo">
+                <span>&nbsp;CSS</span><span>&nbsp;Generator</span>
+            </a>
+            <div class="toptopic">
+            </div>
+        </div>
+    </div>
+    <span id="adstop" class="adsspace"></span>
+    <div id="mainbody">
+        <div class="content-box">
+            <div class="firstsidebar">
+                <div id="fsparent1" class="fsparent">
+                    <div class="childfirst"><br><br><br>
+                        <button class="button" style="position: absolute;right: 15px;top: 15px;"
+                            onclick="document.getElementById('codebox').style.visibility = 'visible';"> Show
+                            Code </button>
+                        <div class="mainchild">
+                            <div class="ch1">
+                                <label><input type="checkbox" id="greyscalecheck"
+                                        onchange="sliderchange('checkbox','')"> Greyscale</label>
+                                <p id="greyscalenum">50%</p>
+                            </div>
+                            <div class="ch2">
+                                <input type="range" id="greyscalerng" max="100" min="0" value="50"
+                                    oninput="sliderchange(this.value,'greyscalenum','%')">
+                            </div>
+                        </div>
+                        <div class="mainchild">
+                            <div class="ch1">
+                                <label><input type="checkbox" id="blurcheck" onchange="sliderchange('checkbox','')">
+                                    Blur</label>
+                                <p id="blurnum">5px</p>
+                            </div>
+                            <div class="ch2">
+                                <input type="range" id="blurrng" max="100" min="0" value="5"
+                                    oninput="sliderchange(this.value,'blurnum','px')">
+                            </div>
+                        </div>
+                        <div class="mainchild">
+                            <div class="ch1">
+                                <label><input type="checkbox" id="brigcheckbox" onchange="sliderchange('checkbox','')">
+                                    Brightness</label>
+                                <p id="brignum">100%</p>
+                            </div>
+                            <div class="ch2">
+                                <input type="range" id="brigrng" max="300" min="0" value="100" step="1"
+                                    oninput="sliderchange(this.value,'brignum','%')">
+                            </div>
+                        </div>
+                        <div class="mainchild">
+                            <div class="ch1">
+                                <label><input type="checkbox" id="contrcheck" onchange="sliderchange('checkbox','')">
+                                    Contrast</label>
+                                <p id="contrnum">100%</p>
+                            </div>
+                            <div class="ch2">
+                                <input type="range" id="contrrng" max="300" min="0" value="100" step="1"
+                                    oninput="sliderchange(this.value,'contrnum','%')">
+                            </div>
+                        </div>
+                        <div class="mainchild">
+                            <div class="ch1">
+                                <label><input type="checkbox" id="huerotcheck" onchange="sliderchange('checkbox','')">
+                                    Hue Rotate</label>
+                                <p id="huerotnum">0deg</p>
+                            </div>
+                            <div class="ch2">
+                                <input type="range" id="huerotrng" max="360" min="0" value="0" step="1"
+                                    oninput="sliderchange(this.value,'huerotnum','deg')">
+                            </div>
+                        </div>
+                        <div class="mainchild">
+                            <div class="ch1">
+                                <label><input type="checkbox" id="invertcheck" onchange="sliderchange('checkbox','')">
+                                    Invert</label>
+                                <p id="invertnum">0%</p>
+                            </div>
+                            <div class="ch2">
+                                <input type="range" id="invertrng" max="100" min="0" value="0"
+                                    oninput="sliderchange(this.value,'invertnum','%')">
+                            </div>
+                        </div>
+                        <div class="mainchild">
+                            <div class="ch1">
+                                <label><input type="checkbox" id="saturatecheck" onchange="sliderchange('checkbox','')">
+                                    Saturate</label>
+                                <p id="saturatenum">100%</p>
+                            </div>
+                            <div class="ch2">
+                                <input type="range" id="saturaterng" max="300" min="0" value="100" step="1"
+                                    oninput="sliderchange(this.value,'saturatenum','%')">
+                            </div>
+                        </div>
+                        <div class="mainchild">
+                            <div class="ch1">
+                                <label><input type="checkbox" id="sepiacheck" onchange="sliderchange('checkbox','')">
+                                    Sepia</label>
+                                <p id="sepianum">0%</p>
+                            </div>
+                            <div class="ch2">
+                                <input type="range" id="sepiarng" max="100" min="0" value="0"
+                                    oninput="sliderchange(this.value,'sepianum','%')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="seconddiv">
+                <img id="sampleimg" src="./image/image-filter-leaf.jpg" alt="Image Filter Leaf">
+            </div>
+        </div>
+        <span id="adsmiddle" class="adsspace"></span>
+        <div class="blog">
+            <h1>BLOG</h1>
+        </div>
+    </div>
+    <span id="adsfooter" class="adsspace"></span>
+    <div class="footer">
+        <a style="display: flex;align-items: center;" href="https://cssgenerator.online/">© 2024 CSS Generator</a>
+        <div class="bottopic">
+            <ul>
+                <li><a href="/page/about.html">About</a></li>
+                <li><a href="/page/privacy-policy.html">Privacy</a></li>
+                <li><a href="/page/contact.html">Contact</a></li>
+                <li><a href="/page/disclaimer.html">Disclaimer</a></li>
+                <li><a href="/page/terms-and-conditions.html">Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/image-filter-main.js"></script>
+    <script src="./js/ads.js"></script>
+</body>
+
+</html>
