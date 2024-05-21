@@ -105,7 +105,7 @@
                                 <label>Select Animation</label>
                             </div>
                             <div class="ch2">
-                                <select id="animationtype" onchange="sliderchange(this.value,'textcolor','')">
+                                <select id="animationtype" onchange="sliderchange(this.value,'textcolor','')" aria-label="Animation Type">
                                     <option value="change-color" selected>color</option>
                                     <option value="jump">jump</option>
                                     <option value="bounce-in">bounce in</option>
@@ -264,7 +264,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
