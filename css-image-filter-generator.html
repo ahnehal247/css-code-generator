@@ -16,7 +16,7 @@
     <link rel="mask-icon" href="./favicon_package/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <meta name="author" content="cssgenerator.online">
+    <meta name="author" content="cssgenerator.online"> 
     <meta name="description" content="It is a tool that allow developer to create custom image filters to their images. These filter tool can change the appearance of the image by adjusting parameters such as color saturation, brightness, contrast, hue, and more.">
     <meta name="keywords" content="image filters online, photo filters online, picture filters online, picture filters, filters for photos, filter my photo, pic filters, filter my picture, filter your photos, filter your picture, online pic filter, pics filter online, image filter">
     <meta property="og:title" content="CSS Image Filter Generator Online" />
@@ -109,7 +109,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="greyscalerng" max="100" min="0" value="50"
-                                    oninput="sliderchange(this.value,'greyscalenum','%')">
+                                    oninput="sliderchange(this.value,'greyscalenum','%')" aria-label="Greyscale Level">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -120,7 +120,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="blurrng" max="100" min="0" value="5"
-                                    oninput="sliderchange(this.value,'blurnum','px')">
+                                    oninput="sliderchange(this.value,'blurnum','px')" aria-label="Blur Level">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -131,7 +131,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="brigrng" max="300" min="0" value="100" step="1"
-                                    oninput="sliderchange(this.value,'brignum','%')">
+                                    oninput="sliderchange(this.value,'brignum','%')" aria-label="Bright Level">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -142,7 +142,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="contrrng" max="300" min="0" value="100" step="1"
-                                    oninput="sliderchange(this.value,'contrnum','%')">
+                                    oninput="sliderchange(this.value,'contrnum','%')" aria-label="Contrast Level">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -153,7 +153,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="huerotrng" max="360" min="0" value="0" step="1"
-                                    oninput="sliderchange(this.value,'huerotnum','deg')">
+                                    oninput="sliderchange(this.value,'huerotnum','deg')" aria-label="Hue Rotate Level">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -164,7 +164,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="invertrng" max="100" min="0" value="0"
-                                    oninput="sliderchange(this.value,'invertnum','%')">
+                                    oninput="sliderchange(this.value,'invertnum','%')" aria-label="Invert Level">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -175,7 +175,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="saturaterng" max="300" min="0" value="100" step="1"
-                                    oninput="sliderchange(this.value,'saturatenum','%')">
+                                    oninput="sliderchange(this.value,'saturatenum','%')" aria-label="Saturate Level">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -186,7 +186,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="sepiarng" max="100" min="0" value="0"
-                                    oninput="sliderchange(this.value,'sepianum','%')">
+                                    oninput="sliderchange(this.value,'sepianum','%')" aria-label="Sepia Level">
                             </div>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy Css Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -210,7 +210,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle1" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>
