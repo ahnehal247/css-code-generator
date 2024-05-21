@@ -131,7 +131,7 @@
                                 </div>
                                 <div class="ch2">
                                     <input type="text" id="startcolor" oninput="sliderchange(this.value,'textcolor','')"
-                                        class="coloris instance1" value="green">
+                                        class="coloris instance1" value="green" aria-label="Start Color">
                                 </div>
                             </div>&nbsp;
                             <div class="mainchild">
@@ -140,7 +140,7 @@
                                 </div>
                                 <div class="ch2">
                                     <input type="text" id="endcolor" oninput="sliderchange(this.value,'textcolor','')"
-                                        class="coloris instance1" value="red">
+                                        class="coloris instance1" value="red" aria-label="End Color">
                                 </div>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                                 <label>Function</label>
                             </div>
                             <div class="ch2">
-                                <select id="fun-type" onchange="sliderchange(this.value,'textcolor','')">
+                                <select id="fun-type" onchange="sliderchange(this.value,'textcolor','')" aria-label="Function">
                                     <option value="linear">linear</option>
                                     <option value="ease" selected>ease</option>
                                     <option value="ease-in">ease-in</option>
@@ -169,7 +169,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" id="x1rng" max="1" min="0" value="0.6" step="0.01"
-                                            oninput="sliderchange(this.value,'x1num','')">
+                                            oninput="sliderchange(this.value,'x1num','')" aria-label="X1">
                                     </div>
                                 </div>&nbsp;&nbsp;
                                 <div class="mainchild">
@@ -179,7 +179,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" id="y1rng" max="1" min="0" value="1" step="0.01"
-                                            oninput="sliderchange(this.value,'y1num','')">
+                                            oninput="sliderchange(this.value,'y1num','')" aria-label="Y1">
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +191,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" id="x2rng" max="1" min="0" value="0.7" step="0.01"
-                                            oninput="sliderchange(this.value,'x2num','')">
+                                            oninput="sliderchange(this.value,'x2num','')" aria-label="X2">
                                     </div>
                                 </div>&nbsp;&nbsp;
                                 <div class="mainchild">
@@ -201,7 +201,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" id="y2rng" max="1" min="0" value="0" step="0.01"
-                                            oninput="sliderchange(this.value,'y2num','')">
+                                            oninput="sliderchange(this.value,'y2num','')" aria-label="Y2">
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +214,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="spdurrng" max="4" min="0" value="1" step="0.01"
-                                    oninput="sliderchange(this.value,'spdurnum','Sec')">
+                                    oninput="sliderchange(this.value,'spdurnum','Sec')" aria-label="Speed Duration">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -224,7 +224,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="stdelyrng" max="1" min="0" value="0" step="0.01"
-                                    oninput="sliderchange(this.value,'stdelynum','Sec')">
+                                    oninput="sliderchange(this.value,'stdelynum','Sec')" aria-label="Start Delay">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -232,7 +232,7 @@
                                 <label>Iteration count</label>
                             </div>
                             <div class="ch2">
-                                <select id="ani-iteration" onchange="sliderchange(this.value,'textcolor','')">
+                                <select id="ani-iteration" onchange="sliderchange(this.value,'textcolor','')" aria-label="Iteration count">
                                     <option value="1">1 time</option>
                                     <option value="2">2 times</option>
                                     <option value="5">5 times</option>
@@ -248,7 +248,7 @@
                             <div class="ch2">
                                 <input type="text" id="boxcolor"
                                     oninput="document.getElementById('samplediv').style.backgroundColor = this.value"
-                                    class="coloris instance1" value="#f7f9fe">
+                                    class="coloris instance1" value="#f7f9fe" aria-label="Background Color">
                             </div>
                         </div>
                     </div>
@@ -272,7 +272,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

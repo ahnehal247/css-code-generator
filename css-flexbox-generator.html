@@ -105,7 +105,7 @@
                                 <label>display:</label>
                             </div>
                             <div class="ch2">
-                                <select id="displaytype" onchange="sliderchange()">
+                                <select id="displaytype" onchange="sliderchange()" aria-label="display">
                                     <option value="flex">Flex</option>
                                     <option value="inline-flex">inline-flex</option>
                                 </select>
@@ -116,7 +116,7 @@
                                 <label>flex-direction:</label>
                             </div>
                             <div class="ch2">
-                                <select id="flexDirection" onchange="sliderchange()">
+                                <select id="flexDirection" onchange="sliderchange()" aria-label="flex-direction">
                                     <option value="row">Row</option>
                                     <option value="column">column</option>
                                     <option value="row-reverse">row-reverse</option>
@@ -129,7 +129,7 @@
                                 <label>flex-wrap:</label>
                             </div>
                             <div class="ch2">
-                                <select id="flexWrap" onchange="sliderchange()">
+                                <select id="flexWrap" onchange="sliderchange()" aria-label="flex-wrap">
                                     <option value="Wrap">Wrap</option>
                                     <option value="Nowrap">Nowrap</option>
                                     <option value="wrap-reverse">wrap-reverse</option>
@@ -141,7 +141,7 @@
                                 <label>justify-content:</label>
                             </div>
                             <div class="ch2">
-                                <select id="justifyContent" onchange="sliderchange()">
+                                <select id="justifyContent" onchange="sliderchange()" aria-label="justify-content">
                                     <option value="flex-start">flex-start</option>
                                     <option value="flex-end">flex-end</option>
                                     <option value="center">Center</option>
@@ -155,7 +155,7 @@
                                 <label>align-items:</label>
                             </div>
                             <div class="ch2">
-                                <select id="alignItems" onchange="sliderchange()">
+                                <select id="alignItems" onchange="sliderchange()" aria-label="align-items">
                                     <option value="flex-start">flex-start</option>
                                     <option value="flex-end">flex-end</option>
                                     <option value="center">Center</option>
@@ -169,7 +169,7 @@
                                 <label>align-content:</label>
                             </div>
                             <div class="ch2">
-                                <select id="alignContent" onchange="sliderchange()">
+                                <select id="alignContent" onchange="sliderchange()" aria-label="align-content">
                                     <option value="flex-start">flex-start</option>
                                     <option value="flex-end">flex-end</option>
                                     <option value="center">Center</option>
@@ -199,7 +199,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -207,7 +207,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

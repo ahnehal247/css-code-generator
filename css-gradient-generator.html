@@ -108,7 +108,7 @@
                                 <label>Orientation</label>
                             </div>
                             <div class="ch2">
-                                <select id="orentype" onchange="sliderchange(this.value,'textcolor','')">
+                                <select id="orentype" onchange="sliderchange(this.value,'textcolor','')" aria-label="Orientation">
                                     <option value="linear-gradient">Linear</option>
                                     <option value="radial-gradient">Radial</option>
                                 </select>
@@ -121,7 +121,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="anglerng" max="360" min="0" value="0" step="1"
-                                    oninput="sliderchange(this.value,'anglenum','deg')">
+                                    oninput="sliderchange(this.value,'anglenum','deg')" aria-label="Angle">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -130,7 +130,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="startcolor" oninput="sliderchange(this.value,'textcolor','')"
-                                    class="coloris instance1" value="#ed369a">
+                                    class="coloris instance1" value="#ed369a" aria-label="Start Color">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -140,7 +140,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="ficolporng" max="100" min="0" value="0"
-                                    oninput="sliderchange(this.value,'ficolponum','%')">
+                                    oninput="sliderchange(this.value,'ficolponum','%')" aria-label="First Color Position">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -149,7 +149,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="endcolor" oninput="sliderchange(this.value,'textcolor','')"
-                                    class="coloris instance1" value="#34ceaa">
+                                    class="coloris instance1" value="#34ceaa" aria-label="End Color">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -159,7 +159,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="encolporng" max="100" min="0" value="80"
-                                    oninput="sliderchange(this.value,'encolponum','%')">
+                                    oninput="sliderchange(this.value,'encolponum','%')" aria-label="End Color Position">
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -183,7 +183,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

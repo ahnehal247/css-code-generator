@@ -107,7 +107,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="redrng" max="255" min="0" value="255" step="1"
-                                    oninput="sliderchange(this.value,'rednum','')">
+                                    oninput="sliderchange(this.value,'rednum','')" aria-label="Red">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -117,7 +117,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="greenrng" max="255" min="0" value="50" step="1"
-                                    oninput="sliderchange(this.value,'greennum','')">
+                                    oninput="sliderchange(this.value,'greennum','')" aria-label="Green">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -127,7 +127,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="bluerng" max="255" min="0" value="255" step="1"
-                                    oninput="sliderchange(this.value,'bluenum','')">
+                                    oninput="sliderchange(this.value,'bluenum','')" aria-label="Blue">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -137,7 +137,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="alpharng" max="1" min="0" value="1" step="0.1"
-                                    oninput="sliderchange(this.value,'alphanum','')">
+                                    oninput="sliderchange(this.value,'alphanum','')" aria-label="Alpha">
                             </div>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -161,7 +161,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

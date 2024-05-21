@@ -107,7 +107,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="allconradrng" max="100" min="0" value="0"
-                                    oninput="sliderchange(this.value,'allconradnum','px')">
+                                    oninput="sliderchange(this.value,'allconradnum','px')"  aria-label="All Corners Radius">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -117,13 +117,13 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="bordwidthrng" max="100" min="0" value="20"
-                                    oninput="sliderchange(this.value,'bordwidthnum','px')">
+                                    oninput="sliderchange(this.value,'bordwidthnum','px')" aria-label="Border Width">
                             </div>
                         </div>
                         <div class="mainchild">
                             <div class="ch1">
                                 <label>Border Style:</label>
-                                <select id="borderstyle" onchange="sliderchange('','textcolor','')">
+                                <select id="borderstyle" onchange="sliderchange('','textcolor','')" aria-label="Border Style">
                                     <option value="solid">solid</option>
                                     <option value="dotted">dotted</option>
                                     <option value="dashed" selected>dashed</option>
@@ -141,7 +141,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="bordercolor" oninput="sliderchange(this.value,'textcolor','')"
-                                    class="coloris instance1" value="#ff7100">
+                                    class="coloris instance1" value="#ff7100" aria-label="Border Color">
                             </div>
                         </div>
                         <hr>
@@ -160,13 +160,13 @@
                                 </div>
                                 <div class="ch2 tworange">
                                     <input type="range" id="bordertopradrng" max="100" min="0" value="0"
-                                        oninput="sliderchange(this.value,'bordertopradnum','px')">&nbsp;
+                                        oninput="sliderchange(this.value,'bordertopradnum','px')" aria-label="Border Top Radius">&nbsp;
                                     <input type="range" id="bordertopwidthrng" max="100" min="0" value="20"
-                                        oninput="sliderchange(this.value,'bordertopwidthnum','px')">
+                                        oninput="sliderchange(this.value,'bordertopwidthnum','px')" aria-label="Border Top Width">
                                 </div>
                                 <div class="indv">
                                     <div class="ch2">
-                                        <select id="bordertopstyle" onchange="sliderchange('','textcolor','')">
+                                        <select id="bordertopstyle" onchange="sliderchange('','textcolor','')" aria-label="Border Top Style">
                                             <option value="solid">solid</option>
                                             <option value="dotted">dotted</option>
                                             <option value="dashed" selected>dashed</option>
@@ -180,7 +180,7 @@
                                     <div class="ch2">
                                         <input type="text" id="bordertopcolor"
                                             oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1"
-                                            value="#ff7100">
+                                            value="#ff7100" aria-label="Border Top Color">
                                     </div>
                                 </div>
                             </div>
@@ -192,13 +192,13 @@
                                 </div>
                                 <div class="ch2 tworange">
                                     <input type="range" id="borderrightradrng" max="100" min="0" value="0"
-                                        oninput="sliderchange(this.value,'borderrightradnum','px')">&nbsp;
+                                        oninput="sliderchange(this.value,'borderrightradnum','px')" aria-label="Border Right Radius">&nbsp;
                                     <input type="range" id="borderrightwidthrng" max="100" min="0" value="20"
-                                        oninput="sliderchange(this.value,'borderrightwidthnum','px')">
+                                        oninput="sliderchange(this.value,'borderrightwidthnum','px')" aria-label="Border Right height">
                                 </div>
                                 <div class="indv">
                                     <div class="ch2">
-                                        <select id="borderrightstyle" onchange="sliderchange('','textcolor','')">
+                                        <select id="borderrightstyle" onchange="sliderchange('','textcolor','')" aria-label="Border Right Style">
                                             <option value="solid">solid</option>
                                             <option value="dotted">dotted</option>
                                             <option value="dashed" selected>dashed</option>
@@ -212,7 +212,7 @@
                                     <div class="ch2">
                                         <input type="text" id="borderrightcolor"
                                             oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1"
-                                            value="#ff7100">
+                                            value="#ff7100" aria-label="Border Right Color">
                                     </div>
                                 </div>
                             </div>
@@ -224,13 +224,13 @@
                                 </div>
                                 <div class="ch2 tworange">
                                     <input type="range" id="borderbottomradrng" max="100" min="0" value="0"
-                                        oninput="sliderchange(this.value,'borderbottomradnum','px')">&nbsp;
+                                        oninput="sliderchange(this.value,'borderbottomradnum','px')" aria-label="Border Bottom Radius">&nbsp;
                                     <input type="range" id="borderbottomwidthrng" max="100" min="0" value="20"
-                                        oninput="sliderchange(this.value,'borderbottomwidthnum','px')">
+                                        oninput="sliderchange(this.value,'borderbottomwidthnum','px')" aria-label="Border Bottom Width">
                                 </div>
                                 <div class="indv">
                                     <div class="ch2">
-                                        <select id="borderbottomstyle" onchange="sliderchange('','textcolor','')">
+                                        <select id="borderbottomstyle" onchange="sliderchange('','textcolor','')" aria-label="Border Bottom Style">
                                             <option value="solid">solid</option>
                                             <option value="dotted">dotted</option>
                                             <option value="dashed" selected>dashed</option>
@@ -244,7 +244,7 @@
                                     <div class="ch2">
                                         <input type="text" id="borderbottomcolor"
                                             oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1"
-                                            value="#ff7100">
+                                            value="#ff7100" aria-label="Border Bottom Color">
                                     </div>
                                 </div>
                             </div>
@@ -256,13 +256,13 @@
                                 </div>
                                 <div class="ch2 tworange">
                                     <input type="range" id="borderleftradrng" max="100" min="0" value="0"
-                                        oninput="sliderchange(this.value,'borderleftradnum','px')">&nbsp;
+                                        oninput="sliderchange(this.value,'borderleftradnum','px')" aria-label="Border Left Radius">&nbsp;
                                     <input type="range" id="borderleftwidthrng" max="100" min="0" value="20"
-                                        oninput="sliderchange(this.value,'borderleftwidthnum','px')">
+                                        oninput="sliderchange(this.value,'borderleftwidthnum','px')"  aria-label="Border Left Width">
                                 </div>
                                 <div class="indv">
                                     <div class="ch2">
-                                        <select id="borderleftstyle" onchange="sliderchange('','textcolor','')">
+                                        <select id="borderleftstyle" onchange="sliderchange('','textcolor','')" aria-label="Border Left Style">
                                             <option value="solid">solid</option>
                                             <option value="dotted">dotted</option>
                                             <option value="dashed" selected>dashed</option>
@@ -276,7 +276,7 @@
                                     <div class="ch2">
                                         <input type="text" id="borderleftcolor"
                                             oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1"
-                                            value="#ff7100">
+                                            value="#ff7100" aria-label="Border Left Color">
                                     </div>
                                 </div>
                             </div>
@@ -288,7 +288,7 @@
                             <div class="ch2">
                                 <input type="text" id="boxcolor"
                                     oninput="document.getElementById('boxprev').style.backgroundColor = this.value"
-                                    class="coloris instance1" value="#000000">
+                                    class="coloris instance1" value="#000000" aria-label="Box Color">
                             </div>
                         </div>
                     </div>
@@ -304,7 +304,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -312,7 +312,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

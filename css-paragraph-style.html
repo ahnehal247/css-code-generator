@@ -157,7 +157,7 @@
                                     <label>Text align</label>
                                 </div>
                                 <div class="ch2">
-                                    <select id="textalign" onchange="sliderchange('','textcolor','')">
+                                    <select id="textalign" onchange="sliderchange('','textcolor','')" aria-label="Text align">
                                         <option value="left">Left</option>
                                         <option value="center">Center</option>
                                         <option value="right">Right</option>
@@ -170,7 +170,7 @@
                                     <label>Text decoration</label>
                                 </div>
                                 <div class="ch2">
-                                    <select id="textdecor" onchange="sliderchange('','textcolor','')">
+                                    <select id="textdecor" onchange="sliderchange('','textcolor','')" aria-label="Text decoration">
                                         <option value="none">None</option>
                                         <option value="underline">Underline</option>
                                         <option value="overline">Overline</option>
@@ -183,7 +183,7 @@
                                     <label>Text transform</label>
                                 </div>
                                 <div class="ch2">
-                                    <select id="texttransform" onchange="sliderchange('','textcolor','')">
+                                    <select id="texttransform" onchange="sliderchange('','textcolor','')" aria-label="Text transform">
                                         <option value="none">None</option>
                                         <option value="capitalize">Capitalize</option>
                                         <option value="uppercase">Uppercase</option>
@@ -213,7 +213,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy Css Code">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -221,7 +221,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

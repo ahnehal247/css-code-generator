@@ -110,7 +110,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="colmcountrng" max="5" min="1" value="1" step="1"
-                                    oninput="sliderchange(this.value,'colmcountnum','')">
+                                    oninput="sliderchange(this.value,'colmcountnum','')" aria-label="Column Counts">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -120,7 +120,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="colmgaprng" max="50" min="0" value="15" step="1"
-                                    oninput="sliderchange(this.value,'colmgapnum','px')">
+                                    oninput="sliderchange(this.value,'colmgapnum','px')" aria-label="Column Gaps">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -128,7 +128,7 @@
                                 <label>Column Rule Style</label>
                             </div>
                             <div class="ch2">
-                                <select id="rulerstylestyle" onchange="sliderchange('','textcolor','')">
+                                <select id="rulerstylestyle" onchange="sliderchange('','textcolor','')" aria-label="Column Rule Style">
                                     <option value="solid">solid</option>
                                     <option value="dotted">dotted</option>
                                     <option value="dashed" selected>dashed</option>
@@ -147,7 +147,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="colmruwidthrng" max="20" min="0" value="2" step="1"
-                                    oninput="sliderchange(this.value,'colmruwidthnum','px')">
+                                    oninput="sliderchange(this.value,'colmruwidthnum','px')" aria-label="Column Rule Width">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -156,7 +156,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="colmrucolor" oninput="sliderchange(this.value,'textcolor','')"
-                                    class="coloris instance1" value="#000000">
+                                    class="coloris instance1" value="#000000" aria-label="Column Rule Color">
                             </div>
                         </div>
                     </div>
@@ -196,7 +196,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>

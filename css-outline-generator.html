@@ -107,7 +107,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="allconradrng" max="100" min="0" value="0"
-                                    oninput="sliderchange(this.value,'allconradnum','px')">
+                                    oninput="sliderchange(this.value,'allconradnum','px')" aria-label="All Corner Radius">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -117,13 +117,13 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="bordwidthrng" max="100" min="0" value="20"
-                                    oninput="sliderchange(this.value,'bordwidthnum','px')">
+                                    oninput="sliderchange(this.value,'bordwidthnum','px')" aria-label="Border Width">
                             </div>
                         </div>
                         <div class="mainchild">
                             <div class="ch1">
                                 <label>Border Style:</label>
-                                <select id="borderstyle" onchange="sliderchange('','textcolor','')">
+                                <select id="borderstyle" onchange="sliderchange('','textcolor','')" aria-label="Border Style">
                                     <option value="solid">solid</option>
                                     <option value="dotted">dotted</option>
                                     <option value="dashed" selected>dashed</option>
@@ -141,7 +141,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="bordercolor" oninput="sliderchange(this.value,'textcolor','')"
-                                    class="coloris instance1" value="#ff7100">
+                                    class="coloris instance1" value="#ff7100" aria-label="Border Color">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -151,7 +151,7 @@
                             <div class="ch2">
                                 <input type="text" id="boxcolor"
                                     oninput="document.getElementById('boxprev').style.backgroundColor = this.value"
-                                    class="coloris instance1" value="#000000">
+                                    class="coloris instance1" value="#000000" aria-label="Box Color">
                             </div>
                         </div>
                     </div>
@@ -167,7 +167,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -175,7 +175,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

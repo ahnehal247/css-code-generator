@@ -108,7 +108,7 @@
                                 <label>Triangle Direction</label>
                             </div>
                             <div class="ch2">
-                                <select id="orentype" onchange="sliderchange(this.value,'textcolor','')">
+                                <select id="orentype" onchange="sliderchange(this.value,'textcolor','')" aria-label="Triangle Direction">
                                     <option value="top">Top</option>
                                     <option value="right">Right</option>
                                     <option value="bottom">Bottom</option>
@@ -127,7 +127,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="alllengrng" max="200" min="0" value="100" step="1"
-                                    oninput="sliderchange(this.value,'alllengnum','px')">
+                                    oninput="sliderchange(this.value,'alllengnum','px')" aria-label="All Side Length">
                             </div>
                         </div>
                         <hr>
@@ -138,7 +138,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="widthrng" max="200" min="0" value="100" step="1"
-                                    oninput="sliderchange(this.value,'widthnum','px')">
+                                    oninput="sliderchange(this.value,'widthnum','px')" aria-label="Width">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -148,7 +148,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="heightrng" max="200" min="0" value="100" step="1"
-                                    oninput="sliderchange(this.value,'heightnum','px')">
+                                    oninput="sliderchange(this.value,'heightnum','px')" aria-label="Height">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -157,7 +157,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="trngcolor" oninput="sliderchange(this.value,'textcolor','')"
-                                    class="coloris instance1" value="#ed427b">
+                                    class="coloris instance1" value="#ed427b" aria-label="Triangle Color">
                             </div>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>

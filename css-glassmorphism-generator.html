@@ -106,7 +106,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="cardcolor" oninput="sliderchange(this.value,'textcolor','')"
-                                    class="coloris instance1" value="rgba(40, 17, 40, 0.3)">
+                                    class="coloris instance1" value="rgba(40, 17, 40, 0.3)" aria-label="Card Color">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -116,7 +116,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="blurrng" max="25" min="0" value="16"
-                                    oninput="sliderchange(this.value,'blurnum','px')">
+                                    oninput="sliderchange(this.value,'blurnum','px')" aria-label="Blur value">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -126,7 +126,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="saturatrng" max="200" min="0" value="180"
-                                    oninput="sliderchange(this.value,'saturatnum','%')">
+                                    oninput="sliderchange(this.value,'saturatnum','%')" aria-label="Saturation">
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -150,7 +150,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

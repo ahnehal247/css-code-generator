@@ -111,7 +111,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="scalexrng" max="2" min="0" value="1" step="0.1"
-                                    oninput="sliderchange(this.value,'scalexnum','')">
+                                    oninput="sliderchange(this.value,'scalexnum','')" aria-label="Scale X">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -121,7 +121,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="scaleyrng" max="2" min="0" value="1" step="0.1"
-                                    oninput="sliderchange(this.value,'scaleynum','')">
+                                    oninput="sliderchange(this.value,'scaleynum','')" aria-label="Scale Y">
                             </div>
                         </div>
                         <hr>
@@ -136,7 +136,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="rotatexrng" max="360" min="0" value="0"
-                                    oninput="sliderchange(this.value,'rotatexnum','deg')">
+                                    oninput="sliderchange(this.value,'rotatexnum','deg')" aria-label="Rotate X">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -146,7 +146,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="rotateyrng" max="360" min="0" value="0"
-                                    oninput="sliderchange(this.value,'rotateynum','deg')">
+                                    oninput="sliderchange(this.value,'rotateynum','deg')" aria-label="Rotate Y">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -156,7 +156,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="rotatezrng" max="360" min="0" value="0"
-                                    oninput="sliderchange(this.value,'rotateznum','deg')">
+                                    oninput="sliderchange(this.value,'rotateznum','deg')" aria-label="Rotate Z">
                             </div>
                         </div>
                         <hr>
@@ -171,7 +171,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="skewxrng" max="360" min="0" value="0"
-                                    oninput="sliderchange(this.value,'skewxnum','deg')">
+                                    oninput="sliderchange(this.value,'skewxnum','deg')" aria-label="Skew X">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -181,7 +181,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="skewyrng" max="360" min="0" value="0"
-                                    oninput="sliderchange(this.value,'skewynum','deg')">
+                                    oninput="sliderchange(this.value,'skewynum','deg')" aria-label="Skew Y">
                             </div>
                         </div>
                         <hr>
@@ -196,7 +196,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="translatxrng" max="100" min="-100" value="0"
-                                    oninput="sliderchange(this.value,'translatxnum','px')">
+                                    oninput="sliderchange(this.value,'translatxnum','px')" aria-label="Translate X">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -206,7 +206,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="translatyrng" max="100" min="-100" value="0"
-                                    oninput="sliderchange(this.value,'translatynum','px')">
+                                    oninput="sliderchange(this.value,'translatynum','px')" aria-label="Translate Y">
                             </div>
                         </div>
                     </div>
@@ -222,7 +222,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -230,7 +230,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

@@ -106,7 +106,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="backcolor" oninput="sliderchange()" class="coloris instance1"
-                                    value="#ff7100">
+                                    value="#ff7100" aria-label="Background Color">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -115,7 +115,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="imageinp" oninput="sliderchange()"
-                                    value="https://cdn.pixabay.com/photo/2022/06/21/03/59/woman-7275076_960_720.jpg">
+                                    value="https://cdn.pixabay.com/photo/2022/06/21/03/59/woman-7275076_960_720.jpg" aria-label="Image">
                             </div>
                         </div>
                         <button class="button"
@@ -135,7 +135,7 @@
                                 <label>Size:</label>
                             </div>
                             <div class="ch2">
-                                <select id="sizetype" onchange="sliderchange()">
+                                <select id="sizetype" onchange="sliderchange()" aria-label="Size">
                                     <option value="auto">auto</option>
                                     <option value="cover">cover</option>
                                     <option value="contain" selected>contain</option>
@@ -151,7 +151,7 @@
                                 <label>Position X:</label>
                             </div>
                             <div class="ch2">
-                                <select id="positionxtype" onchange="sliderchange()">
+                                <select id="positionxtype" onchange="sliderchange()" aria-label="Position X">
                                     <option value="left">left</option>
                                     <option value="right">right</option>
                                     <option value="Center">Center</option>
@@ -167,7 +167,7 @@
                                 <label>Position Y:</label>
                             </div>
                             <div class="ch2">
-                                <select id="positionytype" onchange="sliderchange()">
+                                <select id="positionytype" onchange="sliderchange()" aria-label="Position Y">
                                     <option value="top">top</option>
                                     <option value="bottom">bottom</option>
                                     <option value="center">center</option>
@@ -183,7 +183,7 @@
                                 <label>Repeat:</label>
                             </div>
                             <div class="ch2">
-                                <select id="repeattype" onchange="sliderchange()">
+                                <select id="repeattype" onchange="sliderchange()" aria-label="Repeat">
                                     <option value="repeat">Repeat</option>
                                     <option value="no-repeat">no-repeat</option>
                                     <option value="repeat-x">repeat-x</option>
@@ -204,7 +204,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -212,7 +212,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

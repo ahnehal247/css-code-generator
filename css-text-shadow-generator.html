@@ -108,7 +108,7 @@
                                     <label>Text</label>
                                 </div>
                                 <div class="ch2">
-                                    <input type="text" id="textele"  oninput="sliderchange(this.value,'textcolor','')" value="Text Shadow">
+                                    <input type="text" id="textele"  oninput="sliderchange(this.value,'textcolor','')" value="Text Shadow" aria-label="Text">
                                 </div>
                             </div>
                             <div class="mainchild">
@@ -116,7 +116,7 @@
                                     <label>Text Color</label>
                                 </div>
                                 <div class="ch2">
-                                    <input type="text" id="txtcolor" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#b506fb">
+                                    <input type="text" id="txtcolor" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#b506fb" aria-label="Text Color">
                                 </div>
                             </div>
                             <div class="mainchild">
@@ -124,7 +124,7 @@
                                     <label>Shadow Color</label>
                                 </div>
                                 <div class="ch2">
-                                    <input type="text" id="shadcolor" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#ae8475">
+                                    <input type="text" id="shadcolor" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#ae8475" aria-label="Shadow Color">
                                 </div>
                             </div>
                             <div class="mainchild">
@@ -134,7 +134,7 @@
                                 </div>
                                 <div class="ch2">
                                     <input type="range" id="hoshlerng" max="50" min="-50" value="2"
-                                        oninput="sliderchange(this.value,'hoshlenum','px')">
+                                        oninput="sliderchange(this.value,'hoshlenum','px')" aria-label="Horizontal Shadow Length">
                                 </div>
                             </div>
                             <div class="mainchild">
@@ -144,7 +144,7 @@
                                 </div>
                                 <div class="ch2">
                                     <input type="range" id="veshlerng" max="50" min="-50" value="2"
-                                        oninput="sliderchange(this.value,'veshlenum','px')">
+                                        oninput="sliderchange(this.value,'veshlenum','px')" aria-label="Vertical Shadow Length">
                                 </div>
                             </div>
                             <div class="mainchild">
@@ -154,7 +154,7 @@
                                 </div>
                                 <div class="ch2">
                                     <input type="range" id="blrradrng" max="50" min="0" value="5" step="1"
-                                        oninput="sliderchange(this.value,'blrradnum','px')">
+                                        oninput="sliderchange(this.value,'blrradnum','px')" aria-label="Blur Radius">
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                         <p>Apply this CSS to the html text element you want to style.</p>
                     </div>
                     <div class="codebox">
-                        <button class="button" onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                        <button class="button" onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -176,7 +176,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>

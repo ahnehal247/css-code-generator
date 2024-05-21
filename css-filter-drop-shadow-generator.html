@@ -107,7 +107,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="horoffsetrng" max="100" min="-100" value="69"
-                                    oninput="sliderchange(this.value,'horoffsetnum','px')">
+                                    oninput="sliderchange(this.value,'horoffsetnum','px')" aria-label="Horizontal Offset">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -117,7 +117,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="vertoffsetrng" max="100" min="-100" value="-18"
-                                    oninput="sliderchange(this.value,'vertoffsetnum','px')">
+                                    oninput="sliderchange(this.value,'vertoffsetnum','px')" aria-label="Vertical Offset">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -127,7 +127,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="range" id="blurrng" max="100" min="0" value="19"
-                                    oninput="sliderchange(this.value,'blurnum','px')">
+                                    oninput="sliderchange(this.value,'blurnum','px')" aria-label="Blur">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -136,7 +136,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="shadowcolor" oninput="sliderchange(this.value,'textcolor','')"
-                                    class="coloris instance1" value="rgba(38, 0, 255, 1)">
+                                    class="coloris instance1" value="rgba(38, 0, 255, 1)" aria-label="Shadow Color">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -146,7 +146,7 @@
                             <div class="ch2">
                                 <input type="text" id="boxcolor"
                                     oninput="document.getElementById('samplediv').style.backgroundColor = this.value"
-                                    class="coloris instance1" value="#f7f9fe">
+                                    class="coloris instance1" value="#f7f9fe" aria-label="Background Color">
                             </div>
                         </div>
                         <div class="mainchild">
@@ -155,7 +155,7 @@
                             </div>
                             <div class="ch2">
                                 <input type="text" id="imageinp" oninput="imgselect(this.value)"
-                                    value="./image/logo/css-logo.webp">
+                                    value="./image/logo/css-logo.webp" aria-label="Image">
                             </div>
                         </div>
                     </div>
@@ -171,7 +171,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy CSS Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
@@ -179,7 +179,6 @@
             <span id="adsmiddle1" class="adsspace"></span>
             <div class="blog">
                 <span id="adsmiddle2" class="adsspace"></span>
-                <h1>BLOG</h1>
             </div>
         </div>
         <span id="adsfooter" class="adsspace"></span>
