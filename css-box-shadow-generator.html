@@ -126,7 +126,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" class="horoffrng" id="horoffrng1" max="100" min="-100" value="0"
-                                            oninput="sliderchange(this.value,'horoffnum1','px')">
+                                            oninput="sliderchange(this.value,'horoffnum1','px')" aria-label="Horizontal offset">
                                     </div>
                                 </div>
                                 <div class="mainchild">
@@ -136,7 +136,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" class="veroffrng" id="veroffrng1" max="100" min="-100"
-                                            value="10" oninput="sliderchange(this.value,'veroffnum1','px')">
+                                            value="10" oninput="sliderchange(this.value,'veroffnum1','px')" aria-label="Vertical offset">
                                     </div>
                                 </div>
                                 <div class="mainchild">
@@ -146,7 +146,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" class="blradrng" id="blradrng1" max="100" min="0" value="15"
-                                            oninput="sliderchange(this.value,'blradnum1','px')">
+                                            oninput="sliderchange(this.value,'blradnum1','px')" aria-label="Blur radius">
                                     </div>
                                 </div>
                                 <div class="mainchild">
@@ -156,7 +156,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" class="spradrng" id="spradrng1" max="100" min="-100" value="-3"
-                                            oninput="sliderchange(this.value,'spradnum1','px')">
+                                            oninput="sliderchange(this.value,'spradnum1','px')" aria-label="Spread radius">
                                     </div>
                                 </div>
                                 <div class="mainchild">
@@ -164,7 +164,7 @@
                                         <label>Shadow Color</label>
                                     </div>
                                     <div class="ch2">
-                                        <input type="text" id="clrpickrng1" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#000000">
+                                        <input type="text" id="clrpickrng1" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#000000" aria-label="Shadow Color">
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +186,7 @@
                                         <label>Canvas color</label>
                                     </div>
                                     <div class="ch2">
-                                        <input type="text" id="canvacolrrng" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#f3f4f6">
+                                        <input type="text" id="canvacolrrng" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#f3f4f6" aria-label="Canvas Color">
                                     </div>
                                 </div>
                                 <div class="mainchild">
@@ -194,7 +194,7 @@
                                         <label>Background color</label>
                                     </div>
                                     <div class="ch2">
-                                        <input type="text" id="baccolrrng" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#ffffff">
+                                        <input type="text" id="baccolrrng" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#ffffff" aria-label="Background">
                                     </div>
                                 </div>
                                 <div class="mainchild">
@@ -206,7 +206,7 @@
                                             Transparent</label>
                                     </div>
                                     <div class="ch2">
-                                        <input type="text" id="bordcolrrng" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#ffffff">
+                                        <input type="text" id="bordcolrrng" oninput="sliderchange(this.value,'textcolor','')" class="coloris instance1" value="#ffffff" aria-label="Transparent">
                                     </div>
                                 </div>
                                 <div class="mainchild">
@@ -216,7 +216,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" id="bordradrng" max="20" min="0" value="2"
-                                            oninput="sliderchange(this.value,'bordradnum','rem')">
+                                            oninput="sliderchange(this.value,'bordradnum','rem')" aria-label="Border radius">
                                     </div>
                                 </div>
                                 <div class="mainchild">
@@ -226,7 +226,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" id="bordwdthrng" max="20" min="0" value="2"
-                                            oninput="sliderchange(this.value,'bordwdthnum','px')">
+                                            oninput="sliderchange(this.value,'bordwdthnum','px')" aria-label="Border Width">
                                     </div>
                                 </div>
                                 <div class="mainchild">
@@ -236,7 +236,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" id="heightrng" max="40" min="0"
-                                            oninput="sliderchange(this.value,'heightnum','rem')">
+                                            oninput="sliderchange(this.value,'heightnum','rem')" aria-label="Height">
                                     </div>
                                 </div>
                                 <div class="mainchild">
@@ -246,7 +246,7 @@
                                     </div>
                                     <div class="ch2">
                                         <input type="range" id="widthrng" max="40" min="0" value="20"
-                                            oninput="sliderchange(this.value,'widthnum','rem')">
+                                            oninput="sliderchange(this.value,'widthnum','rem')" aria-label="Width">
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +259,7 @@
                     <div class="codebox">
                         <button class="button"
                             onclick="navigator.clipboard.writeText(document.getElementById('finalcode').innerText.trim());mySnackbar('darkgreen', 'Successfully Copied',this);"><img
-                                src="./image/logo/copy.svg" alt="Copy">&nbsp;Copy</button>
+                                src="./image/logo/copy.svg" alt="Copy Css Code">&nbsp;Copy</button>
                         <div id="finalcode"></div>
                     </div>
                 </div>
